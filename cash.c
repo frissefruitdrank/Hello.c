@@ -5,8 +5,26 @@
 float input_float();
 int main(void)
 {
- int i = round(input_float("positive input: ")*10);
-   printf("%d\n",i);
+ int i = round(input_float("Change: ")*100);
+    int j = 0;
+    int t= i;
+    for ( int h = t ; t >= 25; t = t-25)
+    {
+        j = j +1 ;
+     }
+    for ( int g = t  ; t >= 10; t = t-10)
+    {
+        j = j +1 ;
+     }
+    for ( int g = t  ; t >= 5; t = t-5)
+    {
+        j = j +1 ;
+     }
+    for ( int g = t  ; t >= 1; t = t-1)
+    {
+        j = j +1 ;
+     }
+   printf("%d\n",j);
 }
 
 float input_float(string prompt)
