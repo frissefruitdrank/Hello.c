@@ -24,7 +24,7 @@ int main(void)
     {
         j = j +1 ;
      }
-   printf("%d\n",j);
+   printf("I have %d coin(s)\n",j);
 }
 
 float input_float(string prompt)
