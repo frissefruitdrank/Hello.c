@@ -5,7 +5,7 @@ int get_positive_int(string prompt);
 int main(void)
 {
 int i = get_positive_int("Positive integer: ");
-    printf("%i\n", i);
+    
     for ( int j = 0; j< i;j++)
     {
         for (int g = i-1 ; g > j; g--)
@@ -30,7 +30,7 @@ int get_positive_int(string prompt)
     {
         n = get_int("%s", prompt);
     }
-    while ((n < 0)||(n >8));
+    while ((n <= 0)||(n >8));
     return n;
 
 }
