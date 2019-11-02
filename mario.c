@@ -4,19 +4,19 @@
 int get_positive_int(string prompt);
 int main(void)
 {
-int i = get_positive_int("Positive integer: ");
+    int i = get_positive_int("Height: ");
     
-    for ( int j = 0; j< i;j++)
+    for (int j = 0; j < i; j++)
     {
-        for (int g = i-1 ; g > j; g--)
+        for (int g = i - 1 ; g > j; g--)
         {
             printf(" ");
         }
         printf("#");
-            for (int h = 0; h <j ; h++)
-            {
-                printf("#");
-            }
+        for (int h = 0; h < j ; h++)
+        {
+            printf("#");
+        }
         printf("\n");
     }
 
@@ -30,7 +30,7 @@ int get_positive_int(string prompt)
     {
         n = get_int("%s", prompt);
     }
-    while ((n <= 0)||(n >8));
+    while ((n <= 0) || (n > 8));
     return n;
 
 }
