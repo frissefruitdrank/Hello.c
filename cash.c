@@ -5,18 +5,18 @@
 float input_float();
 int main(void)
 {
- int i = round(input_float("Change: ")*100);
+     int i = round(input_float("Change owed: ") * 100);
     int j = 0;
-    int t= i;
-    for ( int h = t ; t >= 25; t = t-25)
+    int t = i;
+    for ( int h = t ; t >= 25; t = t - 25)
     {
         j = j +1 ;
      }
-    for ( int g = t  ; t >= 10; t = t-10)
+    for ( int g = t  ; t >= 10; t = t - 10)
     {
         j = j +1 ;
      }
-    for ( int g = t  ; t >= 5; t = t-5)
+    for ( int g = t  ; t >= 5; t = t - 5)
     {
         j = j +1 ;
      }
@@ -24,7 +24,7 @@ int main(void)
     {
         j = j +1 ;
      }
-   printf("I have %d coin(s)\n",j);
+   printf("%d\n",j);
 }
 
 float input_float(string prompt)
