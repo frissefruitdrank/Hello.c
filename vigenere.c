@@ -28,7 +28,7 @@ int main(int argc, string argv[])
 
     
     //letting now the ciphertext is being printed next
-    printf("Ciphertext: ");
+    printf("ciphertext: ");
     //iterate trough plain tekst and adding the key and printing ciphertext
     for (int i = 0, j = 0, n = strlen(plaintext); i < n ; i++)
     {
